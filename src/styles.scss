@@ -6,14 +6,23 @@
   --primary-color: #AE7AFF;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "JetBrains Mono", sans-serif;
   background-color: var(--dark-color);
   color: var(--light-color);
+  background-image: url("/assets/img/Bg.png");
 }
 
 .skill-tag {
-  padding: 4px 8px;
+  padding: 0 8px;
   border-radius: 2px;
   border: 1px solid var(--light-color);
   display: inline;
@@ -21,6 +30,13 @@ body {
   font-weight: 700;
   line-height: 24px;
   margin-right: 4px;
+  height: 24px;
+}
+
+.h1{
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 800;
 }
 
 .btn {
