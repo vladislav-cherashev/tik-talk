@@ -1,9 +1,11 @@
 @import "fonts";
+@import "margins";
 
 :root {
   --dark-color: #000000;
   --light-color: #ffffff;
   --primary-color: #AE7AFF;
+  --grey-color: #5F646D
 }
 
 *,
@@ -47,6 +49,22 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
+  cursor: pointer;
+}
+
+.btn-shadow{
+  position: relative;
+
+  &:before{
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+    background: var(--grey-color);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
 }
 
 .h6 {
